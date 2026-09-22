@@ -61,7 +61,7 @@ func main() {
 			fmt.Printf("Kryvora Node Status\n")
 			fmt.Printf("Status:     %s\n", status.Status)
 			fmt.Printf("Version:    %s\n", status.Version)
-			fmt.Printf("Uptime:     %d seconds\n", status.UptimeSec)
+			fmt.Printf("Uptime:     %d seconds (%dh %dm)\n", status.UptimeSec, status.UptimeSec/3600, (status.UptimeSec%3600)/60)
 			fmt.Printf("Peers:      %d connected\n", status.Peers)
 			fmt.Printf("Sync State: %s\n", status.SyncState)
 		}
